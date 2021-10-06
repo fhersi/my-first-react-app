@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
 const SEED_DATA = [
@@ -37,6 +37,8 @@ function App() {
 			return [newExpenseData, ...prevState];
 		});
 	};
+
+	console.log(expenses);
 
 	return (
 		<div>
